@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "script": "node scripts/run.js",
+    "deploy": "npx hardhat run scripts/deploy.js --network goerli"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +18,8 @@
     "ethereum-waffle": "^3.4.4",
     "ethers": "^5.6.9",
     "hardhat": "^2.9.9"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.2"
   }
 }
